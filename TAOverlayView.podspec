@@ -8,23 +8,20 @@
 
 Pod::Spec.new do |s|
   s.name             = "TAOverlayView"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of TAOverlayView."
+  s.version          = "1.0.0"
+  s.summary          = "Creates semi-transparent overlay views with holes to see behind the overlay. Useful for walkthrough tutorials."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+
   s.description      = <<-DESC
+This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a singular overlay, and these holes can be added to the overlay after instantiation using the helper function ``subtractFromView``.
+
                        DESC
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/TAOverlayView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Nick Yap" => "nickayap@gmail.com" }
+  s.author           = { "Nick Yap" => "nick@toboggan.mobi" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TAOverlayView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -34,7 +31,4 @@ Pod::Spec.new do |s|
     'TAOverlayView' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

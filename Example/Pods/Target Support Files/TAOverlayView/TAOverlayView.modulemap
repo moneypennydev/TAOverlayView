@@ -1,0 +1,6 @@
+framework module TAOverlayView {
+  umbrella header "TAOverlayView-umbrella.h"
+
+  export *
+  module * { export * }
+}

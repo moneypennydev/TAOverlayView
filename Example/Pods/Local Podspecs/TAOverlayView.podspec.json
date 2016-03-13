@@ -1,0 +1,25 @@
+{
+  "name": "TAOverlayView",
+  "version": "0.1.0",
+  "summary": "A short description of TAOverlayView.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TAOverlayView",
+  "license": "MIT",
+  "authors": {
+    "Nick Yap": "nickayap@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TAOverlayView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "TAOverlayView": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

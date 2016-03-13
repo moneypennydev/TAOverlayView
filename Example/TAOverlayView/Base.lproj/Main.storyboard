@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="TAOverlayView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,98 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button to demonstrate touch events through holes. (This label was added as a subview to the TAOverlayView in code)" textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5e-kI-IJA">
+                                <rect key="frame" x="40" y="123" width="520" height="354"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMr-zk-D0B">
+                                <rect key="frame" x="275" y="28" width="51" height="30"/>
+                                <state key="normal" title="Tap Me"/>
+                                <connections>
+                                    <segue destination="C3E-6F-glV" kind="presentation" modalTransitionStyle="flipHorizontal" id="jJR-te-heI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dMr-zk-D0B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="76W-8N-k8K"/>
+                            <constraint firstItem="u5e-kI-IJA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Bhm-7i-bty"/>
+                            <constraint firstItem="dMr-zk-D0B" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="gI7-i1-phz"/>
+                            <constraint firstItem="dMr-zk-D0B" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-100" id="hwF-iW-fIH"/>
+                            <constraint firstItem="u5e-kI-IJA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="isu-sS-WQ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u5e-kI-IJA" secondAttribute="trailing" constant="20" id="s8E-Tu-nx8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hwF-iW-fIH"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="dMr-zk-D0B" id="BPe-ta-IcB"/>
+                        <outlet property="label" destination="u5e-kI-IJA" id="awz-ez-QXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="368" y="354"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="X6R-hJ-AEI">
+            <objects>
+                <viewController id="C3E-6F-glV" customClass="SecondViewController" customModule="TAOverlayView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Yi-kA-ikg"/>
+                        <viewControllerLayoutGuide type="bottom" id="00F-Pj-Vm3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K9t-65-seG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwV-2g-7yJ">
+                                <rect key="frame" x="20" y="40" width="51" height="30"/>
+                                <state key="normal" title="Tap Me"/>
+                                <connections>
+                                    <action selector="createCircularHole:" destination="C3E-6F-glV" eventType="touchUpInside" id="BDn-MQ-4vU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zK-ov-A3y">
+                                <rect key="frame" x="522" y="40" width="58" height="30"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="C3E-6F-glV" eventType="touchUpInside" id="AyP-Mb-TyV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button to add a circular hole (See the IBAction in code) " textAlignment="center" lineBreakMode="clip" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENL-5g-34q">
+                                <rect key="frame" x="66" y="158.5" width="469" height="283"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4zK-ov-A3y" secondAttribute="trailing" id="7I5-le-hQr"/>
+                            <constraint firstItem="4zK-ov-A3y" firstAttribute="top" secondItem="0Yi-kA-ikg" secondAttribute="bottom" constant="20" id="DUV-6R-Vsg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ENL-5g-34q" secondAttribute="trailing" constant="45" id="Q5I-us-bSQ"/>
+                            <constraint firstItem="bwV-2g-7yJ" firstAttribute="top" secondItem="0Yi-kA-ikg" secondAttribute="bottom" constant="20" id="TaM-bZ-HtL"/>
+                            <constraint firstItem="ENL-5g-34q" firstAttribute="leading" secondItem="K9t-65-seG" secondAttribute="leadingMargin" constant="46" id="lOY-2n-2UP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bwV-2g-7yJ" secondAttribute="leading" id="muA-iM-XBc"/>
+                            <constraint firstItem="ENL-5g-34q" firstAttribute="centerY" secondItem="K9t-65-seG" secondAttribute="centerY" id="tsc-lF-gdT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="4zK-ov-A3y" id="4Fu-ol-srF"/>
+                        <outlet property="label" destination="ENL-5g-34q" id="Suo-yn-PoY"/>
+                        <outlet property="tapMeButton" destination="bwV-2g-7yJ" id="Jxi-x3-Md8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTy-TO-Snm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="347"/>
         </scene>
     </scenes>
 </document>
