@@ -30,17 +30,23 @@ If you used CocoaPods, you should be able to import the files using
 
 ```@import TAOverlayView;```
 
+## Class Overview
 
-## Creating a walkthrough tutorial.
+It's worth going through a quick overview of the available classes. The main class is the `TAOverlayView` which inherits from `UIView` and allows you to easily create a semi-transparent overlay above a specified frame.
+
+The `TAOverlayView` can have "holes" subtracted from it, allowing users to see and interact with items behind the overlay. In order to create these holes, we use either a `TARectangularSubtractionPath` (for rectangular holes) or a `TACircularSubtractionPath` (for circular holes). Both of these inherit from the `TABaseSubtractionPath` and allow for the easy construction of a `UIBezierPath`.
+
+
+
+## Creating a Walkthrough Tutorial
+This library was created for implementing walkthrough tutorials, so let's go through an example of how to do just that.
+
+Note: the Example project shows a full implementation of the following example, so we recommend checking that out as well.
+
 
 ### Instantiating Overlay
 
-
-### Adding Holes After Instantiation
-
-Sometimes you might want to add more holes to the overlay after instantiation. For example, in a walkthrough tutorial, you might want to highlight another portion of the screen after the user taps a button (see the example project for a full implementation). Simply use ``subtractFromView`` on the overlay to add another hole to the existing overlay:
-
-
+Let's say that you have two buttons, `button1` and `button2`. You want to have a full-screen overlay with a rectangular hole over `button1`. Tapping `button1` will reveal `button2` through a circular hole. In your `UIViewController`, add the following:
 
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -49,16 +55,17 @@ Sometimes you might want to add more holes to the overlay after instantiation. F
     override func viewDidAppear(animated: Bool) {
       super.viewDidAppear(animated)
 
-      // Note: this was created in ``viewDidAppear`` so that the button frame is
+      // Note: the overlay was created in ``viewDidAppear`` so that the button frame is
       // already set. Instantiating in ``viewDidLoad``, etc., might place
       // the hole in the wrong location.
 
 
       // Create the initial overlay over the entire
-      // screen, with a rectangular hole over the ``button1``.
+      // screen, with a rectangular hole over ``button1``.
 
-      let overlay = TAOverlayView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width,
-      UIScreen.mainScreen().bounds.height), subtractedPaths: [
+      let overlay = TAOverlayView(frame: CGRectMake(0, 0,
+         UIScreen.mainScreen().bounds.width,
+         UIScreen.mainScreen().bounds.height), subtractedPaths: [
       TARectangularSubtractionPath(frame: self.button1.frame,
       horizontalPadding: 10.0, verticalPadding: 5.0)
       ])
@@ -70,6 +77,14 @@ Sometimes you might want to add more holes to the overlay after instantiation. F
       self.overlayView = overlay
     }
 
+
+Note that the `subtractedPaths` argument of the `TAOverlayView` init function takes an array of `TABaseSubtractionPath`'s so you can instantiate the overlay with multiple holes (or no holes), if necessary.
+
+### Adding Holes After Instantiation
+
+Sometimes you might want to add more holes to the overlay after instantiation. In our example, we want to highlight `button2` after the user taps `button1`. Hook up an IBAction outlet to the "Touch Up Inside" action of the button. In that IBAction, Simply use ``subtractFromView`` on the overlay to add another hole to the existing overlay:
+
+
     @IBAction func createNewHole(sender: AnyObject) {
       // Add a circular hole above ``button2``.
       // There will now be two holes in the overlay.
@@ -78,7 +93,22 @@ Sometimes you might want to add more holes to the overlay after instantiation. F
         ])
     }
 
-### Creating Multiple Holes
+This creates a circular hole above `button2`. As with the init function of the overlay, `subtractFromView` takes an array of `TABaseSubtractionPath`'s so you add multiple holes simultaneously.
+
+## Dismissing the Overlay
+
+In order to dismiss the overlay, we can fade it out and remove it from the superview with the following:
+
+    if let overlayView = self.overlayView {
+      UIView.animateWithDuration(1.0, animations: {
+        // Fade out the overlay.
+        overlayView.alpha = 0.0
+        }, completion: {(completed: Bool) -> Void in
+          // Remove the overlay and its reference.
+          overlayView.removeFromSuperview()
+          self.overlayView = nil
+        })
+    }
 
 
 ## Author
@@ -87,4 +117,16 @@ Nick Yap, nick@toboggan.mobi
 
 ## License
 
-TAOverlayView is available under the MIT license. See the LICENSE file for more info.
+Copyright © 2016 Toboggan Apps LLC. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
