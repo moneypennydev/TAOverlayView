@@ -24,7 +24,6 @@ class FirstViewController: UIViewController {
     @IBOutlet var button: UIButton!
     @IBOutlet var label: UILabel!
     
-    
     var overlayView: TAOverlayView?
     
     override func viewDidLoad() {
@@ -39,10 +38,10 @@ class FirstViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        // Created in ``viewDidAppear`` so that the button frame is already set. Instantiating in ``viewDidLoad``, etc., might place the hole in the wrong location.
+        // Created in ``viewDidAppear`` so that the button frame is already set. Instantiating before the view appears might place the hole in the wrong location.
         
         if self.overlayView == nil {
-            // Create the semi-transparent overlay over the entire screen, with a rectangular hole over the ``button``.
+            // Create the semi-transparent overlay over the entire screen, with a rectangular hole over ``button``.
             let overlay = TAOverlayView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width,
                 UIScreen.mainScreen().bounds.height), subtractedPaths: [
                     TARectangularSubtractionPath(frame: self.button.frame,

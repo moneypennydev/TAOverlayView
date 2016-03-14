@@ -12,7 +12,9 @@
 
 This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a single overlay, and these holes can be added to the overlay after instantiation.
 
-[Imgur](http://i.imgur.com/vnITWJl.gifv)
+Below is a tutorial in one of our apps that employs this overlay:
+
+![Example](http://i.imgur.com/vnITWJl.gifv "Tutorial in our affirmations app, Mind Over Matter (shameless plug)")
 
 
 ## Requirements
@@ -44,7 +46,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 It's worth going through a quick overview of the available classes. The main class is the `TAOverlayView` which inherits from `UIView` and allows you to easily create a semi-transparent overlay above a specified frame.
 
 The `TAOverlayView` can have "holes" subtracted from it, allowing users to see and interact with items behind the overlay. In order to create these holes, we use either a `TARectangularSubtractionPath` (for rectangular holes) or a `TACircularSubtractionPath` (for circular holes). Both of these inherit from the `TABaseSubtractionPath` and allow for the easy construction of a `UIBezierPath`.
-
 
 
 ## Creating a Walkthrough Tutorial

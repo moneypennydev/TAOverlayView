@@ -10,7 +10,7 @@ PODS:
     - Nimble
     - Quick
   - Quick (0.8.0)
-  - TAOverlayView (0.1.0)
+  - TAOverlayView (1.0.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -28,6 +28,6 @@ SPEC CHECKSUMS:
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Nimble-Snapshots: ab41dd737dcd33a0b0cb005a30465fef70b7207a
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  TAOverlayView: fdadfde1f1adf6198114095596088ed7f78aa382
+  TAOverlayView: bd22b92004cf3c25820357b90fa818adff67f23c
 
 COCOAPODS: 0.39.0

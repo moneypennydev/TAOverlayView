@@ -45,7 +45,7 @@ class SecondViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        // Created in ``viewDidAppear`` so that the button frame is already set. Instantiating in ``viewDidLoad``, etc., might place the hole in the wrong location.
+       // Created in ``viewDidAppear`` so that the button frame is already set. Instantiating before the view appears might place the hole in the wrong location.
         
         if self.overlayView == nil {
             // Create the semi-transparent overlay over the entire screen, with a rectangular hole over the ``tapMeButton``.
@@ -63,8 +63,6 @@ class SecondViewController: UIViewController {
             // Set a reference to the overlay (to hide, add more holes, etc.).
             self.overlayView = overlay
         }
-        
-        
     }
     
     @IBAction func createCircularHole(sender: AnyObject) {
@@ -72,17 +70,14 @@ class SecondViewController: UIViewController {
             self.addedCircularHole = true
             
             // Add a circular hole above the ``backButton``. There will now be two holes in the overlay.
-            self.overlayView?.subtractFromView([TACircularSubtractionPath(frame: self.backButton.frame, radius: 40.0)])
+            self.overlayView?.subtractFromView([
+                TACircularSubtractionPath(frame: self.backButton.frame, radius: 40.0)])
         }
         
     }
     
     @IBAction func goBack(sender: AnyObject) {
-        
+        // Return to the previous controller.
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
-    
-    
-    
 }

@@ -18,12 +18,18 @@ import UIKit
 
 /// Creates a subtraction path that is rectangular.
 public class TARectangularSubtractionPath: TABaseSubtractionPath {
-    /// Padding applied to both the left and the right of ``self.frame``.
+    /// Total padding applied to the left and the right of ``self.frame``.
     let horizontalPadding: CGFloat
     
-    /// Padding applied to both the top and the bottom of ``self.frame``.
+    /// Total padding applied to the top and the bottom of ``self.frame``.
     let verticalPadding: CGFloat
     
+    /// Use to init the path.
+    ///
+    /// - parameter frame: The frame of the object to enclose.
+    /// - parameter horizontalPadding: Total padding applied to the left and the right of the ``frame``.
+    /// - parameter verticalPadding: Total padding applied to the top and the bottom of the ``frame``.
+    ///
     public init(frame: CGRect, horizontalPadding: CGFloat = 0, verticalPadding: CGFloat = 0) {
         self.horizontalPadding = horizontalPadding
         self.verticalPadding = verticalPadding
@@ -53,6 +59,11 @@ public class TACircularSubtractionPath: TABaseSubtractionPath {
     /// The radius of the circle to subtract.
     let radius: CGFloat
     
+    /// Use to init the path.
+    ///
+    /// - parameter frame: The frame of the object to encircle.
+    /// - parameter radius: The radius of the hole. The larger the radius, the larger the hole in the overlay.
+    ///
     public init(frame: CGRect, radius: CGFloat = 0) {
         self.radius = radius
         super.init(frame: frame)
