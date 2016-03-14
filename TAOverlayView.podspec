@@ -1,11 +1,3 @@
-#
-# Be sure to run `pod lib lint TAOverlayView.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "TAOverlayView"
   s.version          = "1.0.0"
@@ -13,14 +5,14 @@ Pod::Spec.new do |s|
 
 
   s.description      = <<-DESC
-This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a single overlay, and these holes can be added to the overlay after instantiation using the helper function ``subtractFromView``.
+This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a single overlay, and these holes can be added to the overlay after instantiation.
 
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TAOverlayView"
-  s.license          = 'MIT'
+  s.homepage         = "https://github.com/TobogganApps/TAOverlayView"
+  s.license          = 'Apache 2.0'
   s.author           = { "Nick Yap" => "nick@toboggan.mobi" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TAOverlayView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/TobogganApps/TAOverlayView.git", :tag => s.version.to_s }
 
 
   s.platform     = :ios, '8.0'
