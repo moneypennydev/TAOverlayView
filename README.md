@@ -1,15 +1,19 @@
 # TAOverlayView
 
-[![CI Status](http://img.shields.io/travis/Nick Yap/TAOverlayView.svg?style=flat)](https://travis-ci.org/Nick Yap/TAOverlayView)
-[![Version](https://img.shields.io/cocoapods/v/TAOverlayView.svg?style=flat)](http://cocoapods.org/pods/TAOverlayView)
-[![License](https://img.shields.io/cocoapods/l/TAOverlayView.svg?style=flat)](http://cocoapods.org/pods/TAOverlayView)
-[![Platform](https://img.shields.io/cocoapods/p/TAOverlayView.svg?style=flat)](http://cocoapods.org/pods/TAOverlayView)
+<!-- [![CI Status](http://img.shields.io/travis/Nick Yap/TAOverlayView.svg?style=flat)](https://travis-ci.org/Nick Yap/TAOverlayView) -->
+<!-- [![Version](https://img.shields.io/cocoapods/v/TAOverlayView.svg?style=flat)](http://cocoapods.org/pods/TAOverlayView) -->
+<!-- [![License](https://img.shields.io/cocoapods/l/TAOverlayView.svg?style=flat)](http://cocoapods.org/pods/TAOverlayView) -->
+<!-- [![Platform](https://img.shields.io/cocoapods/p/TAOverlayView.svg?style=flat)](http://cocoapods.org/pods/TAOverlayView) -->
 
-## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-insert gif
+
+## Overview
+
+This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a single overlay, and these holes can be added to the overlay after instantiation.
+
+[Imgur](http://i.imgur.com/vnITWJl.gifv)
+
 
 ## Requirements
 Embedded frameworks require a minimum deployment target of iOS 8.
@@ -29,6 +33,11 @@ pod "TAOverlayView"
 If you used CocoaPods, you should be able to import the files using
 
 ```@import TAOverlayView;```
+
+## Example Project
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ## Class Overview
 
@@ -109,6 +118,10 @@ In order to dismiss the overlay, we can fade it out and remove it from the super
           self.overlayView = nil
         })
     }
+
+## Creating Custom Holes
+
+In order to create holes other than rectangles or circles, you can subclass `TABaseSubtractionPath` to create custom shapes. Simply override the private `createPath` function and return your custom `UIBezierPath`. View the implementations of `TARectangularSubtractionPath` or `TACircularSubtractionPath` to see this in action.
 
 
 ## Author

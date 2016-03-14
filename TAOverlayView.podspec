@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
 
   s.description      = <<-DESC
-This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a singular overlay, and these holes can be added to the overlay after instantiation using the helper function ``subtractFromView``.
+This library was created to implement engaging overlay walkthrough tutorials that highlight portions of the screen with "holes" through the overlay. The holes can be rectangular or circular, and users can tap through the holes. There can be multiple holes in a single overlay, and these holes can be added to the overlay after instantiation using the helper function ``subtractFromView``.
 
                        DESC
 
