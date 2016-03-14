@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "TAOverlayView"
   s.version          = "1.0.0"
-  s.summary          = "Creates semi-transparent overlay views with holes to see behind the overlay. Useful for walkthrough tutorials."
+  s.summary          = "Creates a semi-transparent overlay with holes to see and interact with views behind the overlay. Useful for walkthrough tutorials."
 
 
   s.description      = <<-DESC

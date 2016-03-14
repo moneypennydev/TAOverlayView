@@ -14,7 +14,7 @@ This library was created to implement engaging overlay walkthrough tutorials tha
 
 Below is a tutorial in one of our apps that employs this overlay:
 
-![Example](http://i.imgur.com/vnITWJl.gifv "Tutorial in our affirmations app, Mind Over Matter (shameless plug)")
+![](http://i.imgur.com/vnITWJl.gif "Tutorial from Mind Over Matter")
 
 
 ## Requirements
