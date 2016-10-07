@@ -13,10 +13,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8D7B0EE9CCA01E4D306B57BF /* Pods_TAOverlayView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCBA4DC5D3C7FED350F4FFA /* Pods_TAOverlayView_Example.framework */; };
-		ACE92288489CB15C322E2DC7 /* Pods_TAOverlayView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5EC3FC9C290429878EA19D /* Pods_TAOverlayView_Tests.framework */; };
 		B03748921C95B6BF0083BB27 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03748911C95B6BF0083BB27 /* SecondViewController.swift */; };
 		B03748981C95EF2A0083BB27 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = B03748971C95EF2A0083BB27 /* NOTICE */; };
+		B42095EA60E6BF7983AF2F2A /* Pods_TAOverlayView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B10F4AFCD931C0833FE5BF /* Pods_TAOverlayView_Example.framework */; };
+		B918275D70FBD747F03FEFB0 /* Pods_TAOverlayView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2013667B3CF0103FBA4A0538 /* Pods_TAOverlayView_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010454BB0B415070431102D7 /* Pods-TAOverlayView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1CCBA4DC5D3C7FED350F4FFA /* Pods_TAOverlayView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAOverlayView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2013667B3CF0103FBA4A0538 /* Pods_TAOverlayView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAOverlayView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36ACF52F8EFDC5C4D33B0D8D /* TAOverlayView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TAOverlayView.podspec; path = ../TAOverlayView.podspec; sourceTree = "<group>"; };
 		37DCAB319B68A52375F621EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		47D114C06BEA98D983DC9FD7 /* Pods-TAOverlayView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3A5559BD30E6AF6952B96A01 /* Pods-TAOverlayView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		603F967F4177577ABED9732E /* Pods-TAOverlayView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TAOverlayView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAOverlayView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,11 +45,11 @@
 		607FACE51AFB9204008FA782 /* TAOverlayView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAOverlayView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		91299FCE661E44C4EA342C1C /* Pods-TAOverlayView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9787641C20BA611D1CE4FD99 /* Pods-TAOverlayView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B03748911C95B6BF0083BB27 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B03748971C95EF2A0083BB27 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NOTICE; path = ../NOTICE; sourceTree = "<group>"; };
-		EC5EC3FC9C290429878EA19D /* Pods_TAOverlayView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAOverlayView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B10F4AFCD931C0833FE5BF /* Pods_TAOverlayView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAOverlayView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92A0B43322A0AA4775C4F5C /* Pods-TAOverlayView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E28382B46092995E5F71BC19 /* Pods-TAOverlayView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAOverlayView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FAB2EC0B9EB114EE42D35569 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D7B0EE9CCA01E4D306B57BF /* Pods_TAOverlayView_Example.framework in Frameworks */,
+				B42095EA60E6BF7983AF2F2A /* Pods_TAOverlayView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,13 +66,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE92288489CB15C322E2DC7 /* Pods_TAOverlayView_Tests.framework in Frameworks */,
+				B918275D70FBD747F03FEFB0 /* Pods_TAOverlayView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33E1BE845EE459770E526204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5B10F4AFCD931C0833FE5BF /* Pods_TAOverlayView_Example.framework */,
+				2013667B3CF0103FBA4A0538 /* Pods_TAOverlayView_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +89,8 @@
 				607FACD21AFB9204008FA782 /* Example for TAOverlayView */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				EF7701238ECBBA68D4BCCA4A /* Pods */,
-				7B6493DAD9E2D47530D3B170 /* Frameworks */,
+				AA0DB74824056C26D72AC565 /* Pods */,
+				33E1BE845EE459770E526204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,22 +154,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		7B6493DAD9E2D47530D3B170 /* Frameworks */ = {
+		AA0DB74824056C26D72AC565 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1CCBA4DC5D3C7FED350F4FFA /* Pods_TAOverlayView_Example.framework */,
-				EC5EC3FC9C290429878EA19D /* Pods_TAOverlayView_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EF7701238ECBBA68D4BCCA4A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				47D114C06BEA98D983DC9FD7 /* Pods-TAOverlayView_Example.debug.xcconfig */,
-				9787641C20BA611D1CE4FD99 /* Pods-TAOverlayView_Example.release.xcconfig */,
-				010454BB0B415070431102D7 /* Pods-TAOverlayView_Tests.debug.xcconfig */,
-				91299FCE661E44C4EA342C1C /* Pods-TAOverlayView_Tests.release.xcconfig */,
+				603F967F4177577ABED9732E /* Pods-TAOverlayView_Example.debug.xcconfig */,
+				E28382B46092995E5F71BC19 /* Pods-TAOverlayView_Example.release.xcconfig */,
+				C92A0B43322A0AA4775C4F5C /* Pods-TAOverlayView_Tests.debug.xcconfig */,
+				3A5559BD30E6AF6952B96A01 /* Pods-TAOverlayView_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -172,12 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TAOverlayView_Example" */;
 			buildPhases = (
-				33585DAE115FAE6E780EA8C0 /* Check Pods Manifest.lock */,
+				6519FEB5FFE28C57799F3979 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3D6DE1F1C1E4C6B47E1F6657 /* Embed Pods Frameworks */,
-				C13A36DD0D26609743B65645 /* Copy Pods Resources */,
+				DB883DE7C5A41D9F1E3DD8B4 /* [CP] Embed Pods Frameworks */,
+				ABD2992F82511388D3B570BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TAOverlayView_Tests" */;
 			buildPhases = (
-				6F7AC43658FB2A34EBA4C25E /* Check Pods Manifest.lock */,
+				80CA4807C2EB3371E8E9EE8D /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				D3E9CB65F6D747CE87AD7CB8 /* Embed Pods Frameworks */,
-				4B3BF62245A72179CA5CB74B /* Copy Pods Resources */,
+				153E94C91173B576202EF092 /* [CP] Embed Pods Frameworks */,
+				C32A741FD20074ED86A3046F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,9 +221,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -269,14 +271,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		33585DAE115FAE6E780EA8C0 /* Check Pods Manifest.lock */ = {
+		153E94C91173B576202EF092 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6519FEB5FFE28C57799F3979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,44 +301,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3D6DE1F1C1E4C6B47E1F6657 /* Embed Pods Frameworks */ = {
+		80CA4807C2EB3371E8E9EE8D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4B3BF62245A72179CA5CB74B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F7AC43658FB2A34EBA4C25E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,14 +316,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C13A36DD0D26609743B65645 /* Copy Pods Resources */ = {
+		ABD2992F82511388D3B570BF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,19 +331,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3E9CB65F6D747CE87AD7CB8 /* Embed Pods Frameworks */ = {
+		C32A741FD20074ED86A3046F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Tests/Pods-TAOverlayView_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB883DE7C5A41D9F1E3DD8B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAOverlayView_Example/Pods-TAOverlayView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -494,7 +496,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47D114C06BEA98D983DC9FD7 /* Pods-TAOverlayView_Example.debug.xcconfig */;
+			baseConfigurationReference = 603F967F4177577ABED9732E /* Pods-TAOverlayView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TAOverlayView/Info.plist;
@@ -503,13 +505,14 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9787641C20BA611D1CE4FD99 /* Pods-TAOverlayView_Example.release.xcconfig */;
+			baseConfigurationReference = E28382B46092995E5F71BC19 /* Pods-TAOverlayView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TAOverlayView/Info.plist;
@@ -518,13 +521,14 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 010454BB0B415070431102D7 /* Pods-TAOverlayView_Tests.debug.xcconfig */;
+			baseConfigurationReference = C92A0B43322A0AA4775C4F5C /* Pods-TAOverlayView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -539,13 +543,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAOverlayView_Example.app/TAOverlayView_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91299FCE661E44C4EA342C1C /* Pods-TAOverlayView_Tests.release.xcconfig */;
+			baseConfigurationReference = 3A5559BD30E6AF6952B96A01 /* Pods-TAOverlayView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -556,6 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAOverlayView_Example.app/TAOverlayView_Example";
 			};
 			name = Release;

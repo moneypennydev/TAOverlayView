@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TAOverlayView"
-  s.version          = "1.0.0"
+  s.version          = "2.0.0"
   s.summary          = "Creates a semi-transparent overlay with holes to see and interact with views behind the overlay. Useful for walkthrough tutorials."
 
 
@@ -11,16 +11,12 @@ This library was created to implement engaging overlay walkthrough tutorials tha
 
   s.homepage         = "https://github.com/TobogganApps/TAOverlayView"
   s.license          = 'Apache 2.0'
-  s.author           = { "Nick Yap" => "nick@toboggan.mobi" }
+  s.author           = { "Nick Yap" => "nickayap@gmail.com" }
   s.source           = { :git => "https://github.com/TobogganApps/TAOverlayView.git", :tag => s.version.to_s }
 
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'TAOverlayView' => ['Pod/Assets/*.png']
-  }
-
 end

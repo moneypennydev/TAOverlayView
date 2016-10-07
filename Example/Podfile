@@ -1,15 +1,19 @@
 source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+
 use_frameworks!
 
-target 'TAOverlayView_Example', :exclusive => true do
+target 'TAOverlayView_Example' do
   pod 'TAOverlayView', :path => '../'
 end
 
-target 'TAOverlayView_Tests', :exclusive => true do
-  pod 'TAOverlayView', :path => '../'
 
-  pod 'Quick', '~> 0.8.0'
-  pod 'Nimble', '3.0.0'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
+target 'TAOverlayView_Tests' do
+  pod 'TAOverlayView', :path => '../'
+  
+  pod 'Quick', '~> 0.9.3'
+  pod 'Nimble', '~> 4.1.0'
+  pod 'FBSnapshotTestCase', '~> 2.1.3'
+  pod 'Nimble-Snapshots', '~> 4.1.0'
 end
