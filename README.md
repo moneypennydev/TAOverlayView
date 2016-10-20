@@ -31,6 +31,8 @@ it, simply add the following line to your Podfile:
 pod "TAOverlayView"
 ```
 
+Use version 2.0.0 for Swift 2.3, and version 3.0.0 for Swift 3.
+
 ## Objective-C Compatibility
 If you used CocoaPods, you should be able to import the files using
 
@@ -71,9 +73,9 @@ Let's say that you have two buttons, `button1` and `button2`. You want to have a
       // Create the initial overlay over the entire
       // screen, with a rectangular hole over ``button1``.
 
-      let overlay = TAOverlayView(frame: CGRectMake(0, 0,
-         UIScreen.mainScreen().bounds.width,
-         UIScreen.mainScreen().bounds.height), subtractedPaths: [
+      let overlay = TAOverlayView(frame: CGRect(x: 0, y: 0,
+          width: UIScreen.main.bounds.width,
+          height: UIScreen.main.bounds.height), subtractedPaths: [
       TARectangularSubtractionPath(frame: self.button1.frame,    // Use a rectangular hole.
       horizontalPadding: 10.0, verticalPadding: 5.0)             // More padding on the left/right than the top/bottom
       ])
@@ -108,7 +110,7 @@ This creates a circular hole above `button2`. As with the init function of the o
 In order to dismiss the overlay, we can fade it out and remove it from the superview with the following:
 
     if let overlayView = self.overlayView {
-      UIView.animateWithDuration(1.0, animations: {
+      UIView.animate(withDuration: 1.0, animations: {
         // Fade out the overlay.
         overlayView.alpha = 0.0
         }, completion: {(completed: Bool) -> Void in
@@ -125,7 +127,7 @@ In order to create holes other than rectangles or circles, you can subclass `TAB
 
 ## Author
 
-Nick Yap, nick@toboggan.mobi
+Nick Yap, nickayap@gmail.com
 
 ## License
 
