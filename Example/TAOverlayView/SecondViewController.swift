@@ -37,20 +37,20 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Set the label as white so we can see it above the overlay.
-        self.label.textColor = UIColor.whiteColor()
+        self.label.textColor = UIColor.white
     }
     
     
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
        // Created in ``viewDidAppear`` so that the button frame is already set. Instantiating before the view appears might place the hole in the wrong location.
         
         if self.overlayView == nil {
             // Create the semi-transparent overlay over the entire screen, with a rectangular hole over the ``tapMeButton``.
-            let overlay = TAOverlayView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width,
-                UIScreen.mainScreen().bounds.height), subtractedPaths: [
+            let overlay = TAOverlayView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width,
+                height: UIScreen.main.bounds.height), subtractedPaths: [
                     TARectangularSubtractionPath(frame: self.tapMeButton.frame,
                         horizontalPadding: 10.0, verticalPadding: 5.0)
                 ])
@@ -65,19 +65,19 @@ class SecondViewController: UIViewController {
         }
     }
     
-    @IBAction func createCircularHole(sender: AnyObject) {
+    @IBAction func createCircularHole(_ sender: AnyObject) {
         if !self.addedCircularHole {
             self.addedCircularHole = true
             
             // Add a circular hole above the ``backButton``. There will now be two holes in the overlay.
-            self.overlayView?.subtractFromView([
+            self.overlayView?.subtractFromView(paths: [
                 TACircularSubtractionPath(frame: self.backButton.frame, radius: 40.0)])
         }
         
     }
     
-    @IBAction func goBack(sender: AnyObject) {
+    @IBAction func goBack(_ sender: AnyObject) {
         // Return to the previous controller.
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

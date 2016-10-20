@@ -31,19 +31,19 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // Set the label as white so we can see it above the overlay.
-        self.label.textColor = UIColor.whiteColor()
+        self.label.textColor = UIColor.white
     }
     
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Created in ``viewDidAppear`` so that the button frame is already set. Instantiating before the view appears might place the hole in the wrong location.
         
         if self.overlayView == nil {
             // Create the semi-transparent overlay over the entire screen, with a rectangular hole over ``button``.
-            let overlay = TAOverlayView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width,
-                UIScreen.mainScreen().bounds.height), subtractedPaths: [
+            let overlay = TAOverlayView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width,
+                height: UIScreen.main.bounds.height), subtractedPaths: [
                     TARectangularSubtractionPath(frame: self.button.frame,
                         horizontalPadding: 10.0, verticalPadding: 5.0)
                 ])
