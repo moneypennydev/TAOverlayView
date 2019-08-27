@@ -80,7 +80,7 @@ public class TACircularSubtractionPath: TABaseSubtractionPath {
 
 
 /// Base class to be inherited from when creating new path shapes.
-public class TABaseSubtractionPath {
+open class TABaseSubtractionPath {
     
     /// The frame of the object that will be visible through the overlay.
     public let frame: CGRect
