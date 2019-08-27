@@ -18,10 +18,10 @@ import UIKit
 
 /// View with a black, semi-transparent overlay that can have subtracted "holes" to view behind the overlay. 
 /// Optionally add ``subtractedPaths`` to initialize the overlay with holes. More paths can be subtracted later using ``subtractFromView``.
-public class TAOverlayView: UIView {
+open class TAOverlayView: UIView {
     
     /// The paths that have been subtracted from the view.
-    fileprivate var subtractions: [UIBezierPath] = []
+    open var subtractions: [UIBezierPath] = []
     
     /// Use to init the overlay.
     ///
@@ -53,7 +53,7 @@ public class TAOverlayView: UIView {
     }
 
 
-    override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         // Allow touches in "holes" of the overlay to be sent to the views behind it.
         for path in self.subtractions {
             if path.contains(point) {
@@ -64,7 +64,7 @@ public class TAOverlayView: UIView {
     }
     
     /// Subtracts the given ``paths`` from the view.
-    public func subtractFromView(paths: [TABaseSubtractionPath]) {
+    open func subtractFromView(paths: [TABaseSubtractionPath]) {
         if let layer = self.layer.mask as? CAShapeLayer, let oldPath = layer.path {
             // Start off with the old/current path.
             let newPath = UIBezierPath(cgPath: oldPath)

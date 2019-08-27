@@ -37,7 +37,7 @@ public class TARectangularSubtractionPath: TABaseSubtractionPath {
     }
     
     /// Creates a rectangular path with the given padding. The frame is centered in the padding.
-    fileprivate override func createPath() -> UIBezierPath {
+    public override func createPath() -> UIBezierPath {
         var rect = self.frame
         
         // Adjust the origin to center the frame in the padding.
@@ -70,7 +70,7 @@ public class TACircularSubtractionPath: TABaseSubtractionPath {
     }
     
     /// Creates a circular path with the given radius.
-    fileprivate override func createPath() -> UIBezierPath {
+    public override func createPath() -> UIBezierPath {
         let rect = CGRect(x: self.frame.midX - self.radius, y: self.frame.midY - self.radius,
                           width: 2 * self.radius, height: 2 * self.radius)
         return UIBezierPath(ovalIn: rect)
@@ -83,10 +83,10 @@ public class TACircularSubtractionPath: TABaseSubtractionPath {
 public class TABaseSubtractionPath {
     
     /// The frame of the object that will be visible through the overlay.
-    let frame: CGRect
+    public let frame: CGRect
     
     /// The path to be subtracted.
-    lazy var bezierPath: UIBezierPath = {
+    public lazy var bezierPath: UIBezierPath = {
         return self.createPath()
     }()
     
@@ -95,7 +95,7 @@ public class TABaseSubtractionPath {
     }
     
     /// Creates the path that will be subtracted. Override to customize the shape of the path (circular, rectangular, etc.).
-    fileprivate func createPath() -> UIBezierPath {
+    open func createPath() -> UIBezierPath {
         return UIBezierPath()
     }
     
